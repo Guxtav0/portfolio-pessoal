@@ -1,63 +1,66 @@
-👋 Olá! Eu sou Gustavo Mariano
+# 🌐 Portfólio Pessoal
 
-🎯 Analista de Dados | Power BI | SQL | Python | Excel | Power Query | IA aplicada à análise de dados
+Meu portfólio pessoal desenvolvido para apresentar minha trajetória como **Analista de Dados**, reunindo experiências profissionais, certificações, projetos e estudos de caso desenvolvidos em **Power BI, SQL, Python, Excel e Business Intelligence**.
 
-Sou apaixonado por transformar dados em informações estratégicas para apoiar tomadas de decisão. Desenvolvo dashboards, automações e soluções de Business Intelligence focadas em gerar insights claros, melhorar processos e agregar valor ao negócio.
+O objetivo deste projeto é demonstrar não apenas conhecimentos técnicos, mas também a capacidade de transformar dados em informações estratégicas através de dashboards, modelagem de dados e soluções voltadas à tomada de decisão.
 
-Atualmente, meu foco é aprofundar meus conhecimentos em Engenharia de Dados, Inteligência Artificial e Machine Learning, enquanto construo projetos que demonstram habilidades práticas utilizando tecnologias amplamente adotadas pelo mercado.
+## ✨ Principais funcionalidades
 
-🚀 Tecnologias
-Business Intelligence
-Power BI
-DAX
-Power Query (M)
-Bancos de Dados
-SQL
-BigQuery
-Linguagens
-Python
-Automação
-Power Automate
-n8n
-Ferramentas
-Excel
-Git
-GitHub
-VS Code
-📂 Projetos
+- Página inicial com apresentação profissional
+- Seção "Sobre"
+- Experiência profissional
+- Certificações
+- Estudos de Caso (Dashboards)
+- Contato
+- Download do currículo
+- Tema claro/escuro
+- Suporte para Português e Inglês
+- Layout responsivo
+- Animações modernas
 
-Aqui você encontrará projetos voltados para:
+## 📊 Estudos de Caso
 
-📊 Dashboards em Power BI
-📈 Análises exploratórias de dados
-🤖 Automação de processos
-🐍 Projetos utilizando Python
-🗄️ Consultas SQL
-📉 Estudos de Business Intelligence
-🧠 Aplicações envolvendo Inteligência Artificial
+O portfólio reúne projetos desenvolvidos em diferentes áreas de negócio, incluindo:
 
-Cada repositório contém documentação, imagens do projeto e instruções para execução.
+- Financeiro
+- Comercial
+- Logística
+- People Analytics (RH)
 
-📚 Atualmente estudando
-Engenharia de Dados
-Machine Learning
-Inteligência Artificial
-BigQuery
-Arquitetura de Dados
-Azure Data Services
-🎯 Objetivo
+Cada projeto apresenta:
 
-Construir soluções baseadas em dados que auxiliem empresas a tomar decisões mais rápidas, inteligentes e orientadas por informações confiáveis.
+- Contexto do problema
+- Objetivo
+- Stack utilizada
+- Principais KPIs
+- Decisões de modelagem
+- Desafios encontrados
+- Aprendizados
+- Links para Power BI e GitHub (quando disponíveis)
 
-Acredito que tecnologia, quando aplicada corretamente, transforma processos complexos em soluções simples.
+## 🚀 Tecnologias
 
-📫 Contato
-LinkedIn
-GitHub
-E-mail
+- HTML5
+- CSS3
+- JavaScript
+- AOS (Animate On Scroll)
+- Font Awesome
+- Typed.js
 
-(Os links podem ser adicionados aqui.)
+## 📱 Responsividade
 
-⭐ Obrigado por visitar meu perfil!
+O site foi desenvolvido seguindo o conceito **Mobile First**, garantindo uma boa experiência em desktops, tablets e smartphones.
 
-Sinta-se à vontade para explorar os projetos, deixar uma estrela ⭐ nos repositórios que considerar interessantes ou entrar em contato para trocar ideias sobre Dados, Business Intelligence e Tecnologia.
+## 🎯 Objetivo
+
+Mais do que um portfólio visual, este projeto foi criado para representar minha experiência na área de Dados, destacando soluções desenvolvidas para diferentes cenários de negócio e demonstrando boas práticas de desenvolvimento front-end e apresentação de projetos.
+
+## 📬 Contato
+
+- LinkedIn: https://www.linkedin.com/in/gustavo-analista/
+- GitHub: https://github.com/Guxtav0
+- Email: guxtavo.contato@gmail.com
+
+---
+
+Desenvolvido por **Gustavo Mariano Franco Andrade**.
