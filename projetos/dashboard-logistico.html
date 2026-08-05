@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Logístico | Estudo de Caso — Gustavo Franco</title>
+    <meta name="description" content="Estudo de caso do Dashboard Logístico com KPIs de OTD, frete, viagens e análise geográfica com MapLibre no Power BI.">
+    <meta property="og:title" content="Dashboard Logístico | Estudo de Caso — Gustavo Franco">
+    <meta property="og:image" content="../projetos/Dashboard de Logística/Dashboard Logistica.png">
+    <link rel="stylesheet" href="projeto-style.css">
+</head>
+<body>
+
+    <div class="glow-blob blob-1" aria-hidden="true"></div>
+    <div class="glow-blob blob-2" aria-hidden="true"></div>
+
+    <nav class="project-navbar" role="navigation" aria-label="Navegação do projeto">
+        <div class="container project-nav-inner">
+            <a href="../index.html#projects" class="project-nav-back" aria-label="Voltar para a lista de projetos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Voltar aos Projetos
+            </a>
+            <span class="project-nav-logo">GF</span>
+            <a href="../index.html#contact" class="project-nav-cta">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                Contato
+            </a>
+        </div>
+    </nav>
+
+    <section class="project-hero" aria-labelledby="case-title">
+        <div class="container">
+            <div class="project-hero-area-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                Logística
+            </div>
+            <h1 class="project-hero-title" id="case-title">Dashboard Logístico</h1>
+            <p class="project-hero-summary">
+                Dashboard executivo para acompanhamento da operação logística, consolidando indicadores de transporte, desempenho das entregas e custos operacionais em uma única solução analítica com visualização geográfica.
+            </p>
+            <div class="project-hero-stack" role="list" aria-label="Tecnologias utilizadas">
+                <span class="stack-tag" role="listitem">Power BI</span>
+                <span class="stack-tag" role="listitem">Power Query</span>
+                <span class="stack-tag" role="listitem">DAX</span>
+                <span class="stack-tag" role="listitem">MapLibre</span>
+                <span class="stack-tag" role="listitem">Modelagem Dimensional</span>
+            </div>
+            <div class="project-hero-actions">
+                <a href="https://github.com/Guxtav0" target="_blank" rel="noopener noreferrer" class="btn-gh" aria-label="Ver código no GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="project-main-image">
+            <img src="Dashboard de Logística/Dashboard Logistica.png" 
+                 alt="Dashboard Logístico com mapa interativo, KPIs de OTD, frete e performance por região" 
+                 loading="lazy">
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="case-study-layout">
+
+            <div class="case-content">
+
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                        Contexto do Problema
+                    </h2>
+                    <p>
+                        A operação logística da empresa necessitava de um painel centralizado para monitorar custos de transporte, o indicador OTD (On-Time Delivery), a utilização da frota e a distribuição das viagens por região — informações que estavam dispersas em diferentes planilhas e sistemas, dificultando a tomada de decisão em tempo hábil.
+                    </p>
+                </div>
+
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        Objetivo
+                    </h2>
+                    <p>
+                        Centralizar os principais indicadores logísticos para facilitar o acompanhamento operacional e estratégico, permitindo análises por transportadora, veículo, região e período com integração de mapa interativo para visualização geográfica das rotas.
+                    </p>
+                </div>
+
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        Desafios Encontrados
+                    </h2>
+                    <ul class="case-list" role="list">
+                        <li class="case-list-item" role="listitem">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Construção do indicador OTD considerando janelas de entrega e tolerâncias configuráveis por tipo de serviço
+                        </li>
+                        <li class="case-list-item" role="listitem">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Integração geográfica com MapLibre para exibição das viagens por estado e região no Power BI
+                        </li>
+                        <li class="case-list-item" role="listitem">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Performance das consultas com grandes volumes de registros de transporte
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                        Decisões de Modelagem
+                    </h2>
+                    <div class="case-learning-card">
+                        <p>
+                            Implementei um <strong>modelo dimensional</strong> com tabela de fatos de transporte central e dimensões de calendário, região geográfica, veículo e transportadora. O cálculo do OTD foi desenvolvido como medida DAX que compara a data de entrega realizada com a janela prevista, respeitando configurações por tipo de serviço. A integração com MapLibre foi feita através de coordenadas geográficas normalizadas no Power Query.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        Aprendizados
+                    </h2>
+                    <div class="case-learning-card">
+                        <p>
+                            O projeto ampliou minha capacidade de construir <strong>indicadores logísticos complexos</strong> no Power BI, com destaque para o desenvolvimento do OTD com DAX e a integração de mapas interativos através do MapLibre. Aprendi a otimizar o modelo para lidar com grandes volumes de dados de transporte sem comprometer a experiência do usuário no relatório.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <aside class="case-sidebar" aria-label="Principais KPIs do projeto">
+                <div class="case-kpi-card">
+                    <div class="case-kpi-card-title">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        Principais KPIs
+                    </div>
+                    <ul class="kpi-list" role="list">
+                        <li class="kpi-item" role="listitem">Valor do Frete</li>
+                        <li class="kpi-item" role="listitem">Total de Viagens</li>
+                        <li class="kpi-item" role="listitem">Peso Total</li>
+                        <li class="kpi-item" role="listitem">Cubagem</li>
+                        <li class="kpi-item" role="listitem">OTD</li>
+                        <li class="kpi-item" role="listitem">Performance Regional</li>
+                        <li class="kpi-item" role="listitem">Viagens por Veículo</li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+
+        <nav class="project-navigation" aria-label="Navegação entre projetos">
+            <a href="dashboard-financeiro.html" class="proj-nav-link" aria-label="Projeto anterior: Dashboard Financeiro">
+                <span class="proj-nav-label">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    Projeto Anterior
+                </span>
+                <span class="proj-nav-title">Dashboard Financeiro</span>
+            </a>
+            <a href="dashboard-rh.html" class="proj-nav-link proj-nav-link--next" aria-label="Próximo projeto: Dashboard People Analytics">
+                <span class="proj-nav-label">
+                    Próximo Projeto
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+                <span class="proj-nav-title">Dashboard People Analytics</span>
+            </a>
+        </nav>
+
+    </main>
+
+</body>
+</html>

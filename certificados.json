@@ -1,0 +1,110 @@
+[
+    {
+        "institution": "Alura",
+        "logo": "Certificações/Alura/logo/Alura.png",
+        "count": 2,
+        "courses": [
+            {
+                "filename": "Conhecendo Instruções SQL.png",
+                "name": "Conhecendo Instruções SQL",
+                "path": "Certificações/Alura/Conhecendo Instruções SQL.png"
+            },
+            {
+                "filename": "Python Para Dados.png",
+                "name": "Python Para Dados",
+                "path": "Certificações/Alura/Python Para Dados.png"
+            }
+        ]
+    },
+    {
+        "institution": "Harvard Managementor",
+        "logo": "Certificações/Harvard Managementor/logo/Harrvard_Managementor.png",
+        "count": 8,
+        "courses": [
+            {
+                "filename": "Fundamentos do Feedback.png",
+                "name": "Fundamentos do Feedback",
+                "path": "Certificações/Harvard Managementor/Fundamentos do Feedback.png"
+            },
+            {
+                "filename": "Gestão de Carreira.png",
+                "name": "Gestão de Carreira",
+                "path": "Certificações/Harvard Managementor/Gestão de Carreira.png"
+            },
+            {
+                "filename": "Gestão de Tempo.png",
+                "name": "Gestão de Tempo",
+                "path": "Certificações/Harvard Managementor/Gestão de Tempo.png"
+            },
+            {
+                "filename": "Interações Difíceis.png",
+                "name": "Interações Difíceis",
+                "path": "Certificações/Harvard Managementor/Interações Difíceis.png"
+            },
+            {
+                "filename": "Negociação.png",
+                "name": "Negociação",
+                "path": "Certificações/Harvard Managementor/Negociação.png"
+            },
+            {
+                "filename": "Raciocínio Estratégico.png",
+                "name": "Raciocínio Estratégico",
+                "path": "Certificações/Harvard Managementor/Raciocínio Estratégico.png"
+            },
+            {
+                "filename": "Técnicas de Apresentação.png",
+                "name": "Técnicas de Apresentação",
+                "path": "Certificações/Harvard Managementor/Técnicas de Apresentação.png"
+            },
+            {
+                "filename": "Técnicas de Redeção.png",
+                "name": "Técnicas de Redeção",
+                "path": "Certificações/Harvard Managementor/Técnicas de Redeção.png"
+            }
+        ]
+    },
+    {
+        "institution": "Hashtag Treinamentos",
+        "logo": "Certificações/Hashtag Treinamentos/logo/Hashtag_Treinamentos.png",
+        "count": 3,
+        "courses": [
+            {
+                "filename": "Imersão Agentes IA.png",
+                "name": "Imersão Agentes IA",
+                "path": "Certificações/Hashtag Treinamentos/Imersão Agentes IA.png"
+            },
+            {
+                "filename": "Jornada Inteligencia Artificial da Hashtag.png",
+                "name": "Jornada Inteligencia Artificial da Hashtag",
+                "path": "Certificações/Hashtag Treinamentos/Jornada Inteligencia Artificial da Hashtag.png"
+            },
+            {
+                "filename": "Jornada Python da Hashtag.png",
+                "name": "Jornada Python da Hashtag",
+                "path": "Certificações/Hashtag Treinamentos/Jornada Python da Hashtag.png"
+            }
+        ]
+    },
+    {
+        "institution": "Udemy",
+        "logo": "Certificações/Udemy/logo/Udemy.png",
+        "count": 3,
+        "courses": [
+            {
+                "filename": "HTML_CSS_Tecnicas_Avancadas.png",
+                "name": "HTML CSS Tecnicas Avancadas",
+                "path": "Certificações/Udemy/HTML_CSS_Tecnicas_Avancadas.png"
+            },
+            {
+                "filename": "PowerBI_Basico_Ao_Avancado.png",
+                "name": "PowerBI Basico Ao Avancado",
+                "path": "Certificações/Udemy/PowerBI_Basico_Ao_Avancado.png"
+            },
+            {
+                "filename": "Sites Profissionais com Wordpress.png",
+                "name": "Sites Profissionais com Wordpress",
+                "path": "Certificações/Udemy/Sites Profissionais com Wordpress.png"
+            }
+        ]
+    }
+]

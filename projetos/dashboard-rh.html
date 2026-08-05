@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard People Analytics | Estudo de Caso — Gustavo Franco</title>
+    <meta name="description" content="Estudo de caso do Dashboard People Analytics com indicadores de headcount, turnover, admissões, desligamentos e folha salarial no Power BI.">
+    <meta property="og:title" content="Dashboard People Analytics | Estudo de Caso — Gustavo Franco">
+    <meta property="og:image" content="../projetos/Dashboard de RH/Dashboard RH.png">
+    <link rel="stylesheet" href="projeto-style.css">
+</head>
+<body>
+
+    <div class="glow-blob blob-1" aria-hidden="true"></div>
+    <div class="glow-blob blob-2" aria-hidden="true"></div>
+
+    <nav class="project-navbar" role="navigation" aria-label="Navegação do projeto">
+        <div class="container project-nav-inner">
+            <a href="../index.html#projects" class="project-nav-back" aria-label="Voltar para a lista de projetos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Voltar aos Projetos
+            </a>
+            <span class="project-nav-logo">GF</span>
+            <a href="../index.html#contact" class="project-nav-cta">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                Contato
+            </a>
+        </div>
+    </nav>
+
+    <section class="project-hero" aria-labelledby="case-title">
+        <div class="container">
+            <div class="project-hero-area-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                People Analytics
+            </div>
+            <h1 class="project-hero-title" id="case-title">Dashboard People Analytics</h1>
+            <p class="project-hero-summary">
+                Dashboard analítico para acompanhamento dos principais indicadores de Recursos Humanos, consolidando dados de colaboradores para apoiar decisões estratégicas de gestão de pessoas.
+            </p>
+            <div class="project-hero-stack" role="list" aria-label="Tecnologias utilizadas">
+                <span class="stack-tag" role="listitem">Power BI</span>
+                <span class="stack-tag" role="listitem">Power Query</span>
+                <span class="stack-tag" role="listitem">DAX</span>
+                <span class="stack-tag" role="listitem">Modelagem Dimensional</span>
+            </div>
+            <div class="project-hero-actions">
+                <a href="https://github.com/Guxtav0" target="_blank" rel="noopener noreferrer" class="btn-gh" aria-label="Ver código no GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="project-main-image">
+            <img src="Dashboard de RH/Dashboard RH.png" 
+                 alt="Dashboard People Analytics com KPIs de headcount, turnover e distribuição por departamento" 
+                 loading="lazy">
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="case-study-layout">
+
+            <div class="case-content">
+
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                        Contexto do Problema
+                    </h2>
+                    <p>
+                        A área de Recursos Humanos precisava consolidar dados de colaboradores provenientes de diferentes sistemas para ter uma visão unificada sobre admissões, desligamentos, turnover e composição do quadro. A ausência de um painel centralizado dificultava o acompanhamento de indicadores estratégicos de pessoas.
+                    </p>
+                </div>
+
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        Objetivo
+                    </h2>
+                    <p>
+                        Disponibilizar indicadores de admissões, desligamentos, turnover, folha salarial e perfil dos colaboradores em um único dashboard, possibilitando análises por departamento, unidade, cargo e período para apoiar a tomada de decisão estratégica em gestão de pessoas.
+                    </p>
+                </div>
+
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        Desafios Encontrados
+                    </h2>
+                    <ul class="case-list" role="list">
+                        <li class="case-list-item" role="listitem">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Modelagem organizacional hierárquica (colaboradores, departamentos, unidades) com relacionamentos complexos
+                        </li>
+                        <li class="case-list-item" role="listitem">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Criação dos indicadores de turnover com lógica de headcount ativo em cada período
+                        </li>
+                        <li class="case-list-item" role="listitem">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Visualização de grandes volumes de colaboradores mantendo desempenho e clareza na leitura dos dados
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                        Decisões de Modelagem
+                    </h2>
+                    <div class="case-learning-card">
+                        <p>
+                            Estruturei o modelo com uma <strong>dimensão de colaboradores</strong> como entidade central, relacionada a dimensões de departamentos, unidades e calendário. A tabela de fatos concentra eventos de movimentação (admissão, desligamento, transferência) permitindo calcular o headcount ativo em qualquer ponto no tempo via DAX com funções de inteligência temporal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        Aprendizados
+                    </h2>
+                    <div class="case-learning-card">
+                        <p>
+                            Este projeto aprofundou meu conhecimento em <strong>People Analytics</strong> e na construção de métricas de RH no Power BI, especialmente no cálculo de turnover e na modelagem de dados organizacionais hierárquicos. Aprendi a traduzir conceitos de gestão de pessoas em indicadores mensuráveis que apoiam decisões estratégicas.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <aside class="case-sidebar" aria-label="Principais KPIs do projeto">
+                <div class="case-kpi-card">
+                    <div class="case-kpi-card-title">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        Principais KPIs
+                    </div>
+                    <ul class="kpi-list" role="list">
+                        <li class="kpi-item" role="listitem">Headcount</li>
+                        <li class="kpi-item" role="listitem">Turnover</li>
+                        <li class="kpi-item" role="listitem">Admissões</li>
+                        <li class="kpi-item" role="listitem">Desligamentos</li>
+                        <li class="kpi-item" role="listitem">Folha Salarial</li>
+                        <li class="kpi-item" role="listitem">Salário Médio</li>
+                        <li class="kpi-item" role="listitem">Distribuição Etária</li>
+                        <li class="kpi-item" role="listitem">Distribuição por Gênero</li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+
+        <nav class="project-navigation" aria-label="Navegação entre projetos">
+            <a href="dashboard-logistico.html" class="proj-nav-link" aria-label="Projeto anterior: Dashboard Logístico">
+                <span class="proj-nav-label">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    Projeto Anterior
+                </span>
+                <span class="proj-nav-title">Dashboard Logístico</span>
+            </a>
+            <a href="dashboard-comercial.html" class="proj-nav-link proj-nav-link--next" aria-label="Próximo projeto: Dashboard Comercial">
+                <span class="proj-nav-label">
+                    Próximo Projeto
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+                <span class="proj-nav-title">Dashboard Comercial</span>
+            </a>
+        </nav>
+
+    </main>
+
+</body>
+</html>

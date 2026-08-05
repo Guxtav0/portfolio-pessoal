@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Financeiro | Estudo de Caso — Gustavo Franco</title>
+    <meta name="description" content="Estudo de caso completo do Dashboard Financeiro desenvolvido por Gustavo Franco: contexto, KPIs, modelagem dimensional e aprendizados.">
+    <meta property="og:title" content="Dashboard Financeiro | Estudo de Caso — Gustavo Franco">
+    <meta property="og:description" content="Dashboard executivo para consolidação de receitas, despesas e saldo financeiro com modelagem dimensional em Power BI.">
+    <meta property="og:image" content="../projetos/Dashboard de Fluxo de Caixa/Dashboard Fluxo de Caixa.png">
+    <link rel="stylesheet" href="projeto-style.css">
+</head>
+<body>
+
+    <div class="glow-blob blob-1" aria-hidden="true"></div>
+    <div class="glow-blob blob-2" aria-hidden="true"></div>
+
+    <!-- Navbar -->
+    <nav class="project-navbar" role="navigation" aria-label="Navegação do projeto">
+        <div class="container project-nav-inner">
+            <a href="../index.html#projects" class="project-nav-back" aria-label="Voltar para a lista de projetos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Voltar aos Projetos
+            </a>
+            <span class="project-nav-logo">GF</span>
+            <a href="../index.html#contact" class="project-nav-cta">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                Contato
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero do Projeto -->
+    <section class="project-hero" aria-labelledby="case-title">
+        <div class="container">
+            <div class="project-hero-area-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                Financeiro
+            </div>
+            <h1 class="project-hero-title" id="case-title">Dashboard Financeiro</h1>
+            <p class="project-hero-summary">
+                Dashboard desenvolvido para consolidar receitas, despesas e saldo financeiro em uma única visão analítica, permitindo acompanhar a saúde financeira da empresa e apoiar decisões estratégicas.
+            </p>
+            <div class="project-hero-stack" role="list" aria-label="Tecnologias utilizadas">
+                <span class="stack-tag" role="listitem">Power BI</span>
+                <span class="stack-tag" role="listitem">Power Query</span>
+                <span class="stack-tag" role="listitem">DAX</span>
+                <span class="stack-tag" role="listitem">Modelagem Dimensional</span>
+                <span class="stack-tag" role="listitem">Excel</span>
+            </div>
+            <div class="project-hero-actions">
+                <a href="https://github.com/Guxtav0" target="_blank" rel="noopener noreferrer" class="btn-gh" aria-label="Ver código no GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Imagem Principal -->
+    <div class="container">
+        <div class="project-main-image">
+            <img src="Dashboard de Fluxo de Caixa/Dashboard Fluxo de Caixa.png" 
+                 alt="Visão completa do Dashboard Financeiro com KPIs de receita, despesa e saldo" 
+                 loading="lazy">
+        </div>
+    </div>
+
+    <!-- Conteúdo do Estudo de Caso -->
+    <main class="container">
+        <div class="case-study-layout">
+
+            <!-- Conteúdo Principal -->
+            <div class="case-content">
+
+                <!-- Contexto -->
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                        Contexto do Problema
+                    </h2>
+                    <p>
+                        Empresas precisam monitorar continuamente entradas e saídas financeiras. Quando essas informações estão distribuídas em diferentes fontes, identificar tendências, controlar despesas e analisar o fluxo de caixa torna-se uma tarefa complexa e sujeita a erros manuais.
+                    </p>
+                </div>
+
+                <!-- Objetivo -->
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        Objetivo
+                    </h2>
+                    <p>
+                        Centralizar indicadores financeiros em um dashboard executivo para facilitar análises por período, setor e classificação das despesas, eliminando a dependência de relatórios manuais em planilhas e oferecendo uma visão consolidada e dinâmica da saúde financeira.
+                    </p>
+                </div>
+
+                <!-- Desafios -->
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        Desafios Encontrados
+                    </h2>
+                    <ul class="case-list" role="list">
+                        <li class="case-list-item" role="listitem">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Modelagem financeira adequada para suportar cálculos de saldo acumulado e variações por período
+                        </li>
+                        <li class="case-list-item" role="listitem">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Padronização das categorias de despesas provenientes de múltiplas fontes com nomenclaturas distintas
+                        </li>
+                        <li class="case-list-item" role="listitem">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Criação de indicadores dinâmicos que respondessem aos filtros de período e setor sem perda de performance
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Decisões de Modelagem -->
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                        Decisões de Modelagem
+                    </h2>
+                    <div class="case-learning-card">
+                        <p>
+                            Adotei um <strong>modelo em estrela</strong> separando os fatos financeiros das dimensões de calendário, setores e classificação de despesas. Essa escolha garantiu desempenho nas queries DAX e escalabilidade para futuras expansões do modelo. A tabela de fatos concentra as movimentações financeiras (receitas e despesas), enquanto as dimensões permitem os cruzamentos analíticos necessários para uma visão executiva completa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Aprendizados -->
+                <div class="case-block">
+                    <h2 class="case-block-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        Aprendizados
+                    </h2>
+                    <div class="case-learning-card">
+                        <p>
+                            Este projeto consolidou minha compreensão sobre <strong>modelagem dimensional aplicada a contextos financeiros</strong>, especialmente no tratamento de medidas de saldo acumulado com funções DAX como CALCULATE e DATESBETWEEN. Aprendi a equilibrar a necessidade de flexibilidade analítica com a manutenção do desempenho do relatório, além de aprimorar minha capacidade de transformar dados financeiros brutos em indicadores executivos acionáveis.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sidebar de KPIs -->
+            <aside class="case-sidebar" aria-label="Principais KPIs do projeto">
+                <div class="case-kpi-card">
+                    <div class="case-kpi-card-title">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        Principais KPIs
+                    </div>
+                    <ul class="kpi-list" role="list">
+                        <li class="kpi-item" role="listitem">Receita Total</li>
+                        <li class="kpi-item" role="listitem">Despesa Total</li>
+                        <li class="kpi-item" role="listitem">Saldo</li>
+                        <li class="kpi-item" role="listitem">Movimentações por Período</li>
+                        <li class="kpi-item" role="listitem">Despesas por Setor</li>
+                        <li class="kpi-item" role="listitem">Despesas por Classificação</li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- Navegação entre Projetos -->
+        <nav class="project-navigation" aria-label="Navegação entre projetos">
+            <a href="dashboard-comercial.html" class="proj-nav-link" aria-label="Projeto anterior: Dashboard Comercial">
+                <span class="proj-nav-label">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    Projeto Anterior
+                </span>
+                <span class="proj-nav-title">Dashboard Comercial</span>
+            </a>
+            <a href="dashboard-logistico.html" class="proj-nav-link proj-nav-link--next" aria-label="Próximo projeto: Dashboard Logístico">
+                <span class="proj-nav-label">
+                    Próximo Projeto
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+                <span class="proj-nav-title">Dashboard Logístico</span>
+            </a>
+        </nav>
+
+    </main>
+
+</body>
+</html>
