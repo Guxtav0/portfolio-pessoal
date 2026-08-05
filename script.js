@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             impact_corp_1_area: "Operações",
             impact_corp_1_desc: "Monitoramento de produtividade, custos operacionais e retrabalho, permitindo o acompanhamento contínuo da eficiência das operações.",
             impact_corp_2_title: "AMS — Application Management Services",
-            impact_corp_2_area: "Suporte de TI",
+            impact_corp_2_area: "Suporte Operacional",
             impact_corp_2_desc: "Desenvolvimento de indicadores relacionados ao suporte de aplicações.",
             impact_corp_3_title: "IDLE — Gestão de Capacidade",
             impact_corp_3_area: "Finanças",
