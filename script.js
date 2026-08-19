@@ -791,4 +791,108 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.reveal-item').forEach(el => revealObserver.observe(el));
 
+    // --- Carrossel 3D Interativo da Seção Home ---
+    const heroCarousel = document.getElementById('hero-carousel');
+    if (heroCarousel) {
+        const cards = heroCarousel.querySelectorAll('.mockup-card-3d');
+        const prevBtn = document.getElementById('hero-carousel-prev');
+        const nextBtn = document.getElementById('hero-carousel-next');
+        const dots = document.querySelectorAll('#hero-carousel-dots .carousel-dot');
+        
+        let currentIndex = 0;
+        const totalCards = cards.length;
+        let autoPlayTimer = null;
+
+        function updateCarousel(index) {
+            currentIndex = (index + totalCards) % totalCards;
+            
+            cards.forEach((card) => {
+                const cardIndex = parseInt(card.getAttribute('data-index'), 10);
+                const offset = (cardIndex - currentIndex + totalCards) % totalCards;
+                
+                // Limpar classes de posição anteriores
+                card.classList.remove('card-pos-0', 'card-pos-1', 'card-pos-2', 'card-pos-3');
+                card.classList.add(`card-pos-${offset}`);
+            });
+
+            dots.forEach((dot, i) => {
+                if (i === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            updateCarousel(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            updateCarousel(currentIndex - 1);
+        }
+
+        function startAutoPlay() {
+            stopAutoPlay();
+            autoPlayTimer = setInterval(nextSlide, 4500);
+        }
+
+        function stopAutoPlay() {
+            if (autoPlayTimer) {
+                clearInterval(autoPlayTimer);
+                autoPlayTimer = null;
+            }
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                nextSlide();
+                startAutoPlay();
+            });
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                prevSlide();
+                startAutoPlay();
+            });
+        }
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', (e) => {
+                e.preventDefault();
+                updateCarousel(i);
+                startAutoPlay();
+            });
+        });
+
+        cards.forEach((card) => {
+            card.addEventListener('click', (e) => {
+                if (e.target.closest('a')) return;
+                
+                const cardIndex = parseInt(card.getAttribute('data-index'), 10);
+                if (cardIndex !== currentIndex) {
+                    updateCarousel(cardIndex);
+                    startAutoPlay();
+                } else {
+                    const link = card.getAttribute('data-link');
+                    if (link) window.location.href = link;
+                }
+            });
+        });
+
+        const carouselContainer = document.getElementById('hero-carousel-container');
+        if (carouselContainer) {
+            carouselContainer.addEventListener('mouseenter', stopAutoPlay);
+            carouselContainer.addEventListener('mouseleave', startAutoPlay);
+        }
+
+        // Inicializar carrossel
+        updateCarousel(0);
+        startAutoPlay();
+    }
+
 });
+
