@@ -7,13 +7,14 @@
     <meta name="description" content="Estudo de caso completo do Dashboard Financeiro desenvolvido por Gustavo Franco: contexto, KPIs, modelagem dimensional e aprendizados.">
     <meta property="og:title" content="Dashboard Financeiro | Estudo de Caso — Gustavo Franco">
     <meta property="og:description" content="Dashboard executivo para consolidação de receitas, despesas e saldo financeiro com modelagem dimensional em Power BI.">
-    <meta property="og:image" content="../projetos/Dashboard de Fluxo de Caixa/Dashboard Fluxo de Caixa.png">
+    <meta property="og:image" content="Dashboard de Fluxo de Caixa/Dashboard Fluxo de Caixa.png">
+    <meta name="theme-color" content="#0C0C0C">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D7E2EA' stroke-width='2.5'><rect width='24' height='24' rx='6' fill='%230C0C0C'/><line x1='17' y1='18' x2='17' y2='10'/><line x1='12' y1='18' x2='12' y2='6'/><line x1='7' y1='18' x2='7' y2='13'/></svg>">
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/95cecf452d3208890088a5b4c19c7ecf?family=Helvetica+Neue+ME" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://db.onlinewebfonts.com/c/95cecf452d3208890088a5b4c19c7ecf?family=Helvetica+Neue+ME"></noscript>
     <link rel="stylesheet" href="projeto-style.css">
 </head>
 <body>
-
-    <div class="glow-blob blob-1" aria-hidden="true"></div>
-    <div class="glow-blob blob-2" aria-hidden="true"></div>
 
     <!-- Navbar -->
     <nav class="project-navbar" role="navigation" aria-label="Navegação do projeto">
@@ -23,7 +24,7 @@
                 Voltar aos Projetos
             </a>
             <span class="project-nav-logo">GF</span>
-            <a href="../index.html#contact" class="project-nav-cta">
+            <a href="../index.html#contact" class="contact-btn project-nav-cta">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 Contato
             </a>
@@ -37,7 +38,7 @@
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
                 Financeiro
             </div>
-            <h1 class="project-hero-title" id="case-title">Dashboard Financeiro</h1>
+            <h1 class="hero-heading project-hero-title" id="case-title">Dashboard Financeiro</h1>
             <p class="project-hero-summary">
                 Dashboard desenvolvido para consolidar receitas, despesas e saldo financeiro em uma única visão analítica, permitindo acompanhar a saúde financeira da empresa e apoiar decisões estratégicas.
             </p>
@@ -49,7 +50,7 @@
                 <span class="stack-tag" role="listitem">Excel</span>
             </div>
             <div class="project-hero-actions">
-                <a href="https://github.com/Guxtav0" target="_blank" rel="noopener noreferrer" class="btn-gh" aria-label="Ver código no GitHub">
+                <a href="https://github.com/Guxtav0" target="_blank" rel="noopener noreferrer" class="live-project-btn" aria-label="Ver código no GitHub">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                     GitHub
                 </a>
@@ -58,16 +59,16 @@
     </section>
 
     <!-- Imagem Principal -->
-    <div class="container">
+    <div class="container project-media-section">
         <div class="project-main-image">
-            <img src="Dashboard de Fluxo de Caixa/Dashboard Fluxo de Caixa.png" 
-                 alt="Visão completa do Dashboard Financeiro com KPIs de receita, despesa e saldo" 
+            <img src="Dashboard de Fluxo de Caixa/Dashboard Fluxo de Caixa.png"
+                 alt="Visão completa do Dashboard Financeiro com KPIs de receita, despesa e saldo"
                  loading="lazy">
         </div>
     </div>
 
     <!-- Conteúdo do Estudo de Caso -->
-    <main class="container">
+    <main class="container case-main">
         <div class="case-study-layout">
 
             <!-- Conteúdo Principal -->
